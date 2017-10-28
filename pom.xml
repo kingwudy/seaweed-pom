@@ -17,6 +17,7 @@
     <org.springframework-version>4.1.6.RELEASE</org.springframework-version>
     <org.aspectj-version>1.8.10</org.aspectj-version>
     <jackson-version>2.8.10</jackson-version>
+    <junit-version>4.10</junit-version>
   </properties>
 
   <dependencies>
@@ -45,7 +46,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.10</version>
+      <version>${junit-version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -90,11 +91,6 @@
     </plugins>
   </build>
 
-  <scm>
-    <developerConnection>scm:github:https://github.com/kingwudy/seaweed-pom.git</developerConnection>
-    <tag>HEAD</tag>
-  </scm>
-
   <distributionManagement>
     <repository>
       <id>release</id>
@@ -107,4 +103,9 @@
       <url>http://nexus.waterspace.org.cn/nexus/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
+
+  <scm>
+    <developerConnection>scm:github:https://github.com/kingwudy/seaweed-pom.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
 </project>
